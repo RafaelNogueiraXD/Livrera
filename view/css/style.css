@@ -1,0 +1,593 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Oleo+Script+Swash+Caps&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cousine', monospace;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  text-decoration: none;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #14eab3ff;
+  border-radius: 10px;
+  color: #14eab3ff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #14eab3ff;
+}
+
+.btn-concluir {
+  text-decoration: none;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #06dd06;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  transition: all 400ms;
+  min-width: 150px;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.btn-concluir:hover {
+  background-color: green;
+}
+
+.btn-efect {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  color: #14eab3ff;
+}
+
+.btn-efect:hover {
+  color: white;
+  background-color: #14eab3ff;
+  -webkit-box-shadow: 0 0 10px #14eab3ff, 0 0 40px #14eab3ff, 0 0 80px #14eab3ff;
+          box-shadow: 0 0 10px #14eab3ff, 0 0 40px #14eab3ff, 0 0 80px #14eab3ff;
+}
+
+.tmodern {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #14eab3ff;
+  color: transparent;
+}
+
+.centraliza {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 5vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table {
+  width: 140%;
+  border: 1 solid grey;
+  border-collapse: collapse;
+}
+
+table thead tr:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+table th {
+  border-bottom: 1px solid #14eab3ff;
+  width: 500px;
+  font-size: 25px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #14eab3ff;
+  color: white;
+}
+
+table tr {
+  width: 500px;
+}
+
+table tr .md {
+  border-left: 1px solid #14eab3ff;
+  border-right: 1px solid #14eab3ff;
+}
+
+table tr td {
+  padding: 40px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.menu {
+  list-style: none;
+  float: left;
+}
+
+.menu li {
+  position: relative;
+  float: left;
+}
+
+.menu li a {
+  color: grey;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.menu li a:hover {
+  background: #14eab3ff;
+  color: #fff;
+  -moz-box-shadow: 0 3px 10px 0 #CCC;
+  -webkit-box-shadow: 0 3px 10px 0 #ccc;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 25px;
+  left: -40px;
+  background-color: transparent;
+  display: none;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.menu li ul li {
+  background: rgba(171, 164, 173, 0.3);
+  display: block;
+  width: 150px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.menu li:hover ul, .menu li.over ul {
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .conteudoModal {
+  margin-left: 30%;
+  width: 50%;
+  min-height: 30vh;
+  background: white;
+  position: fixed;
+  border-radius: 20px;
+}
+
+.modal .conteudoModal .inicioModal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 9fr 1fr;
+      grid-template-columns: 9fr 1fr;
+}
+
+.modal .conteudoModal .inicioModal div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .conteudoModal .inicioModal div button {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.modal .conteudoModal .inicioModal div button:hover {
+  color: red;
+}
+
+.modal .conteudoModal .inicioModal div button:focus {
+  outline: none;
+}
+
+.modal .conteudoModal .meioModal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.modal .conteudoModal .meioModal div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.modal .conteudoModal .meioModal div:hover label {
+  font-size: 25px;
+}
+
+.modal .conteudoModal .meioModal div:hover input {
+  font-size: 18px;
+}
+
+.modal .conteudoModal .meioModal div:focus label {
+  font-size: 25px;
+}
+
+.modal .conteudoModal .meioModal div:focus input {
+  font-size: 18px;
+}
+
+.modal .conteudoModal .meioModal div label {
+  font-size: 20px;
+  margin-left: 25%;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.modal .conteudoModal .meioModal div input {
+  width: 40%;
+  background: none;
+  height: 4%;
+  padding: 5px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  font-size: 15px;
+}
+
+.modal .conteudoModal .meioModal div input:hover {
+  height: 40px;
+  font-size: 18px;
+}
+
+.modal .conteudoModal .meioModal div input:focus {
+  outline: none;
+  font-size: 18px;
+}
+
+.modal .conteudoModal .meioModal div input:focus .meioModal div label {
+  font-size: 25px;
+}
+
+.modal .conteudoModal .meioModal div textarea {
+  padding: 10px;
+  margin: 10px;
+}
+
+.modal .conteudoModal .mensagemUnica {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-right: 10%;
+}
+
+.modal .conteudoModal .botoes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.modal .conteudoModal .botoes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.modal .conteudoModal .botoes div input[type=submit] {
+  background: #06dd06;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.modal .conteudoModal .botoes div input[type=submit]:hover {
+  background-color: green;
+}
+
+#msg {
+  padding: 10px;
+  background: rgba(255, 0, 0, 0.233);
+  border: 2px solid red;
+  color: white;
+  display: block;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.config {
+  margin-left: 28%;
+  width: 90%;
+  height: 50vh;
+  border: 1px solid #14eab3ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.config .label {
+  text-align: start;
+}
+
+.config .label i {
+  margin-left: 40%;
+}
+
+.config div {
+  width: 100%;
+}
+
+.config div label {
+  text-align: start;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.config div input {
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #14eab3ff;
+  height: 50px;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.config div input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 5px #14eab3ff;
+          box-shadow: 0px 0px 5px #14eab3ff;
+}
+
+.alerts {
+  margin-left: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alerts p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.formcon {
+  background-color: white;
+  width: 100px;
+  margin-left: 35%;
+  padding-bottom: 10%;
+}
+
+.formcon:hover {
+  background-color: #14eab3ff;
+  color: white;
+}
+
+.MeuMenu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 6fr 2fr;
+      grid-template-columns: 2fr 6fr 2fr;
+  background-color: #161616f3;
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  text-align: center;
+}
+
+.MeuMenu div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+}
+
+.menuOptions div {
+  width: 20%;
+}
+
+.menuOptions div b a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.menuOptions div b a::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 5px;
+  bottom: -4.5vh;
+  left: -50%;
+  background: #14eab3ff;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.menuOptions div b a:hover {
+  text-decoration: none;
+}
+
+.menuOptions div b a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.menuOptions div b a:active {
+  text-decoration: none;
+}
+
+.menuOptions div b a:active::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #14eab3ff;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  font-family: 'Oleo Script', cursive;
+}
+
+.conteudo {
+  margin-top: 12vh;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
