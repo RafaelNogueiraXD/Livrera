@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  background: #181818;
 }
 
 .btn {
@@ -96,14 +97,38 @@ body {
 .btn-efect:hover {
   color: white;
   background-color: #14eab3ff;
-  -webkit-box-shadow: 0 0 10px #14eab3ff, 0 0 40px #14eab3ff, 0 0 80px #14eab3ff;
-          box-shadow: 0 0 10px #14eab3ff, 0 0 40px #14eab3ff, 0 0 80px #14eab3ff;
+  -webkit-box-shadow: 0 0 10px #14eab3ff, 0 0 0px #14eab3ff, 0 0 20px #14eab3ff;
+          box-shadow: 0 0 10px #14eab3ff, 0 0 0px #14eab3ff, 0 0 20px #14eab3ff;
+}
+
+@-webkit-keyframes neon {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #14eab3ff);
+            filter: drop-shadow(0 0 0 #14eab3ff);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 30px #14eab3ff);
+            filter: drop-shadow(0 0 30px #14eab3ff);
+  }
+}
+
+@keyframes neon {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #14eab3ff);
+            filter: drop-shadow(0 0 0 #14eab3ff);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 30px #14eab3ff);
+            filter: drop-shadow(0 0 30px #14eab3ff);
+  }
 }
 
 .tmodern {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #14eab3ff;
   color: transparent;
+  -webkit-animation: neon 3s alternate infinite ease-in-out;
+          animation: neon 3s alternate infinite ease-in-out;
 }
 
 .centraliza {
@@ -487,7 +512,7 @@ table tr:hover {
   display: grid;
   -ms-grid-columns: 2fr 6fr 2fr;
       grid-template-columns: 2fr 6fr 2fr;
-  background-color: #161616f3;
+  background-color: #161616b2;
   width: 100%;
   height: 12vh;
   position: fixed;
@@ -561,15 +586,36 @@ table tr:hover {
           transform-origin: bottom left;
 }
 
-.menuOptions div b a:active {
-  text-decoration: none;
+.apresenta {
+  margin-top: 10vh;
+  width: 100%;
 }
 
-.menuOptions div b a:active::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+.apresenta .fundopreto {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.267);
+}
+
+.apresenta section {
+  min-height: 100vh;
+  background: #d3d3d3;
+}
+
+.apresenta .part {
+  background-image: url("img/microphone.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: "1920px";
+  height: "1280px";
+}
+
+.apresenta .part2 {
+  background-image: url("img/concerto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: "1920px";
+  height: "1280px";
 }
 
 a {
@@ -589,5 +635,6 @@ h1, h2, h3, h4 {
 .conteudo {
   margin-top: 12vh;
   width: 100%;
+  margin-left: 20%;
 }
 /*# sourceMappingURL=style.css.map */

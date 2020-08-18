@@ -34,3 +34,5 @@ function abreModal(){
         },700,function(){})
     }, 100);
 }
+
+

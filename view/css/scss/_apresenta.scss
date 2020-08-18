@@ -1,0 +1,22 @@
+.apresenta{
+    margin-top: 10vh;
+    width: 100%;
+    .fundopreto{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.267);
+    }
+    section{
+        min-height: 100vh;
+        background: #d3d3d3;
+
+    }
+    .part{
+        // width: 100%;
+        @include imagem("img/microphone.jpg","1920px","1280px");
+    }
+    .part2{
+        @include imagem("img/concerto.jpg","1920px","1280px");
+
+    }
+}

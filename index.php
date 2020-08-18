@@ -1,3 +1,3 @@
 <?php
-    header("Location: view/pages/templates/menu.html");
+    header("Location: view/pages/apresentation/index.html");
 ?>

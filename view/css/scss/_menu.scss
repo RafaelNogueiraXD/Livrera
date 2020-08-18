@@ -2,7 +2,7 @@
 .MeuMenu{
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
-    background-color: #161616f3;
+    background-color: #161616b2;
     width: 100%;
     height: 12vh;
     position: fixed;
@@ -46,15 +46,8 @@
               transform-origin: bottom left;
             }
           }
-          &:active{
-            text-decoration: none;
-            &::before{
-              transform: scaleX(1);
-              transform-origin: bottom left;
-            }
-          }
+          
         }
       }
     }
   }
-    
