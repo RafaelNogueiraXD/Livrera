@@ -43,6 +43,7 @@
                     margin-top: 20px;
 
                     // border: 1px solid white;
+                
                     margin-left: 23%;
                     margin-right: 20%;
                     border: 3px solid black;
@@ -116,7 +117,31 @@
             }
         }
     }
-
+    //responsivo
+    @media screen and (min-width:800px) and (max-width: 1199px){
+        .part3{
+            min-height: 180vh;
+            .ptconteudo3{
+                padding-top: 27%;
+            }
+        }
+        .part3 .ptconteudo3 div .conteudos{
+            margin-left: 8%;
+            margin-right: 20%;
+       }
+       }
+    @media screen and (min-width:1200px) and (max-width: 1400px){
+        .part3 .ptconteudo3 div .conteudos{
+            margin-left: 13%;
+            margin-right: 20%;
+       }
+       }
+    @media screen and (min-width:1401px) and (max-width: 1600px){
+        .part3 .ptconteudo3 div .conteudos{
+            margin-left: 17%;
+            margin-right: 20%;
+       }
+    }
 }
 .ptconteudo1{
     

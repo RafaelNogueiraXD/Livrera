@@ -560,8 +560,8 @@ table tr:hover {
 .MeuMenu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 6fr 2fr;
-      grid-template-columns: 2fr 6fr 2fr;
+  -ms-grid-columns: 1.5fr 8fr 1.7fr;
+      grid-template-columns: 1.5fr 8fr 1.7fr;
   background-color: #161616b2;
   width: 100%;
   height: 12vh;
@@ -801,6 +801,33 @@ table tr:hover {
 
 .apresenta .part3 .ptconteudo3 div .conteudos .div2 {
   padding-top: 20px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  .apresenta .part3 {
+    min-height: 180vh;
+  }
+  .apresenta .part3 .ptconteudo3 {
+    padding-top: 27%;
+  }
+  .apresenta .part3 .ptconteudo3 div .conteudos {
+    margin-left: 8%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .apresenta .part3 .ptconteudo3 div .conteudos {
+    margin-left: 13%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+  .apresenta .part3 .ptconteudo3 div .conteudos {
+    margin-left: 17%;
+    margin-right: 20%;
+  }
 }
 
 .ptconteudo1 {
