@@ -9,15 +9,18 @@
     text-align: center;
     div{
     @include centraliza();
-  
+    
     }
   }
-
+  .Slogan{
+    @include imagem("img/logos/livrera3.png","165.13px","76px");
+    display: block;
+  }
   .menuOptions {
     @include centraliza();
     font-size: 25px;
     div{
-      width: 20%;
+      margin-left: 10%;
       b{
         a{
         

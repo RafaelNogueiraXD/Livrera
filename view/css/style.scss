@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Oleo+Script+Swash+Caps&display=swap");
 
 $primaria:#14eab3ff;
-$secundaria: grey;
+$secundaria: #a6a6a6;
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family:'Cousine', monospace ;
+  color: white;
 }
 body{
   width: 100%;
@@ -20,13 +21,28 @@ body{
 @import "scss/config";
 @import "scss/menu";
 @import "scss/apresenta";
-
+footer{
+  background-color: #161616;
+  height: 152px;
+  width: 100%;
+  display:flex;
+  @include centraliza();
+  a{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
 a{
   color: white;
   text-decoration: none;
+  font-family:'Cousine', monospace ;
+
   &:hover{
     color: $primaria;
   }
+}
+h1{
+  font-size: 36px;
 }
 h1, h2, h3, h4{
   color: white;

@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Cousine', monospace;
+  color: white;
 }
 
 body {
@@ -101,6 +102,51 @@ body {
           box-shadow: 0 0 10px #14eab3ff, 0 0 0px #14eab3ff, 0 0 20px #14eab3ff;
 }
 
+.btncromado {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 53px;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: #161616;
+  background: -webkit-gradient(linear, right top, left top, from(#9B51E0), to(#0693E3));
+  background: linear-gradient(to left, #9B51E0, #0693E3);
+  transition: all 400ms;
+  background: linear-gradient(281.04deg, #9B51E0 0%, #0693E3 100%);
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.btncromado:hover {
+  color: #14eab3ff;
+  border: 1px solid #14eab3ff;
+}
+
+.texto {
+  font-size: 14px;
+}
+
+.legenda {
+  color: #a6a6a6;
+}
+
 @-webkit-keyframes neon {
   from {
     -webkit-filter: drop-shadow(0 0 0 #14eab3ff);
@@ -129,6 +175,10 @@ body {
   color: transparent;
   -webkit-animation: neon 3s alternate infinite ease-in-out;
           animation: neon 3s alternate infinite ease-in-out;
+}
+
+.primaria {
+  color: #14eab3ff;
 }
 
 .centraliza {
@@ -198,7 +248,7 @@ table tr:hover {
 }
 
 .menu li a {
-  color: grey;
+  color: #a6a6a6;
   text-decoration: none;
   padding: 5px 10px;
   display: block;
@@ -532,6 +582,15 @@ table tr:hover {
           justify-content: center;
 }
 
+.Slogan {
+  background-image: url("img/logos/livrera3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: "165.13px";
+  height: "76px";
+  display: block;
+}
+
 .menuOptions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,7 +606,7 @@ table tr:hover {
 }
 
 .menuOptions div {
-  width: 20%;
+  margin-left: 10%;
 }
 
 .menuOptions div b a {
@@ -592,9 +651,10 @@ table tr:hover {
 }
 
 .apresenta .fundopreto {
+  display: block;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.267);
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .apresenta section {
@@ -608,9 +668,13 @@ table tr:hover {
   background-size: 100%;
   width: "1920px";
   height: "1280px";
+  margin: 0;
+  padding: 0;
 }
 
 .apresenta .part2 {
+  margin: 0;
+  padding: 0;
   background-image: url("img/concerto.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -618,13 +682,252 @@ table tr:hover {
   height: "1280px";
 }
 
+.apresenta .part3 {
+  background-color: #f2f2f2;
+  width: 100%;
+  min-height: 110vh;
+}
+
+.apresenta .part3 .ptconteudo3 {
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.apresenta .part3 .ptconteudo3 div {
+  width: 100%;
+}
+
+.apresenta .part3 .ptconteudo3 div .apoiadoresh {
+  margin-bottom: 20px;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos {
+  margin-top: 20px;
+  margin-left: 23%;
+  margin-right: 20%;
+  border: 3px solid black;
+  background-color: #242424;
+  border-radius: 20px;
+  max-width: 1000px;
+  min-height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos div .linha {
+  display: block;
+  width: 244.99px;
+  background-color: #14eab3ff;
+  height: 2px;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos div .patrocinadores {
+  margin-top: 10%;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos div .patrocinadores div {
+  padding-bottom: 10px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos div .patrocinadores div p {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #161616;
+  border: 1px solid black;
+  background-color: #f2f2f281;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos div .patrocinadores div p:hover {
+  color: #f2f2f2;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos div .patrocinadores div img {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* fotos convidados */
+  -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.54));
+          filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.54));
+  border-radius: 14px;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos div .patrocinadores div img:hover {
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(255, 254, 254, 0.54));
+          filter: drop-shadow(3px 3px 3px rgba(255, 254, 254, 0.54));
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos .div1 {
+  padding-top: 20px;
+  border: 4px solid black;
+  background-color: #242424;
+  border-radius: 20px;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+.apresenta .part3 .ptconteudo3 div .conteudos .div2 {
+  padding-top: 20px;
+}
+
+.ptconteudo1 {
+  padding-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ptconteudo1 .conteudos {
+  width: 500px;
+}
+
+.ptconteudo1 .conteudos div {
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+.ptconteudo1 .conteudos div .linha {
+  display: block;
+  width: 174px;
+  height: 1px;
+  background: #a6a6a6;
+}
+
+.ptconteudo1 .conteudos div .texto {
+  margin-top: 7%;
+}
+
+.ptconteudo1 .conteudos div .btncromado {
+  margin-top: 5%;
+}
+
+.ptconteudo2 {
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ptconteudo2 div {
+  width: 1000px;
+  padding-top: 10px;
+}
+
+.ptconteudo2 div .conteudos {
+  min-width: 1000px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ptconteudo2 div .conteudos .sobre {
+  display: block;
+  width: 34%;
+  height: 100%;
+}
+
+.ptconteudo2 div .conteudos .sobre .texto {
+  text-align: left;
+  margin-top: 20%;
+}
+
+.ptconteudo2 div .conteudos .sobre .opcoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+.ptconteudo2 div .conteudos .sobre .opcoes img {
+  margin-left: 74px;
+}
+
+footer {
+  background-color: #161616;
+  height: 152px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer a {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 a {
   color: white;
   text-decoration: none;
+  font-family: 'Cousine', monospace;
 }
 
 a:hover {
   color: #14eab3ff;
+}
+
+h1 {
+  font-size: 36px;
 }
 
 h1, h2, h3, h4 {
