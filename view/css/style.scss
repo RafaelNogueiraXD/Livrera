@@ -7,20 +7,23 @@ $secundaria: #a6a6a6;
   padding: 0;
   box-sizing: border-box;
   font-family:'Cousine', monospace ;
-  color: white;
+  color: #f2f2f2;
 }
 body{
   width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: rgb(24, 24, 24);
+  background: #f2f2f2;
 }
 @import "scss/functions";
 @import "scss/objetos";
 @import "scss/config";
 @import "scss/menu";
 @import "scss/apresenta";
+@import "template/menutemplate";
+@import "plataforma/telainicial";
+
 footer{
   background-color: #161616;
   height: 152px;

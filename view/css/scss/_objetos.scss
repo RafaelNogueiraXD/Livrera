@@ -30,6 +30,27 @@
         background-color: green;
     }
 }
+.red-btn{
+    @include link();
+    @include centraliza();
+    // background: rgb(6, 221, 6);
+    border:none;
+    border-radius:10px;
+    padding: 12px;
+    color: #DD0426;
+    transition: all 400ms;
+    min-width: 125px;
+    max-width: 125px;
+    height: 61;
+    cursor: pointer;
+
+    border: 1px solid #DD0426;
+    &:hover{
+        background-color: #DD0426;
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+}
 .btn-efect{
     cursor: pointer;
     @include link();
