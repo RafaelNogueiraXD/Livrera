@@ -58,18 +58,20 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #06dd06;
-  border: none;
+  border: 1px solid #06dd06;
   border-radius: 10px;
   padding: 12px;
-  color: white;
+  color: #06dd06;
   transition: all 400ms;
   min-width: 150px;
-  max-width: 300px;
+  max-width: 150px;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .btn-concluir:hover {
+  text-decoration: none;
+  color: #f2f2f2;
   background-color: green;
 }
 
@@ -1328,6 +1330,314 @@ table tr:hover {
   background-size: 100%;
   width: "170px";
   height: "160px";
+}
+
+.conteudoTelainicial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.conteudoTelainicial .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25vh;
+}
+
+.conteudoTelainicial .pesquisa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 2fr;
+      grid-template-columns: 8fr 2fr;
+  height: 10vh;
+}
+
+.conteudoTelainicial .pesquisa #campos form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 2fr;
+      grid-template-columns: 8fr 2fr;
+}
+
+.conteudoTelainicial .pesquisa #campos form .concluiform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudoTelainicial .pesquisa #campos form .pesquisaform {
+  padding-left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudoTelainicial .pesquisa #campos form .pesquisaform label {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 1%;
+}
+
+.conteudoTelainicial .pesquisa #campos form .pesquisaform input {
+  margin-right: 10%;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  background: none;
+  padding: 10px;
+  width: 25%;
+}
+
+.conteudoTelainicial .pesquisa #campos form .pesquisaform input:focus {
+  border: 2px solid #14eab3ff;
+  border-radius: 10px;
+  outline: 0px;
+}
+
+#pesquisar {
+  margin-left: 95%;
+}
+
+.convidadosEspeciais {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin-left: 10%;
+  margin-right: 15%;
+  margin-bottom: 10%;
+}
+
+.convidadosEspeciais div {
+  width: 170px;
+  height: 160px;
+  background-color: #636363;
+  border: 1px solid #050505;
+  border-radius: 35px;
+  margin: auto;
+  margin-top: 30%;
+  position: relative;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  overflow: hidden;
+}
+
+.convidadosEspeciais div:hover .desc {
+  display: block;
+  margin-top: 0%;
+}
+
+.convidadosEspeciais div .desc {
+  margin-top: 70%;
+  display: block;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.647);
+}
+
+.convidadosEspeciais div .desc h3 {
+  margin: 10px auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.convidadosEspeciais div .desc p {
+  font-size: 10px;
+  color: white;
+}
+
+.convidadosEspeciais div .desc b {
+  color: white;
+}
+
+.convidadosEspeciais div .desc a {
+  color: #14eab3ff;
+  margin-left: 20%;
+  margin-bottom: 10px;
+}
+
+.conteudoConvidadoEspecifico {
+  height: 440px;
+}
+
+.conteudoConvidadoEspecifico h1 {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.conteudoConvidadoEspecifico .dadospessoais {
+  margin-top: 4%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.conteudoConvidadoEspecifico .dadospessoais .dadospessoaisImagem {
+  height: 440px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  justify-items: right;
+  text-align: right;
+  justify-self: right;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  justify-content: right;
+  border-radius: 46px;
+  border: 1px solid black;
+}
+
+.conteudoConvidadoEspecifico .dadospessoais .dadospessoaisEscrito {
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 400px;
+  background: rgba(22, 22, 22, 0.94);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.conteudoConvidadoEspecifico .dadospessoais .dadospessoaisEscrito p {
+  color: #f2f2f2;
+  margin-top: 5%;
+}
+
+.conteudoConvidadoEspecifico .dadospessoais .dadospessoaisEscrito h2 {
+  width: 100%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudoConvidadoEspecifico .dadospessoais .dadospessoaisEscrito .ddusuario {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.descricaoConvidado {
+  margin-top: 7%;
+  display: -ms-grid;
+  display: grid;
+  width: 70%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background: rgba(22, 22, 22, 0.94);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.descricaoConvidado h2 {
+  text-align: left;
+}
+
+.descricaoConvidado p {
+  margin-top: 3%;
+  color: #f2f2f2;
+  margin-right: 5%;
+  word-wrap: break-word;
+}
+
+.obrasConvidado {
+  margin-top: 7%;
+  display: -ms-grid;
+  display: grid;
+  width: 70%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background: rgba(22, 22, 22, 0.94);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 30px;
+  margin-bottom: 10%;
+}
+
+.obrasConvidado h2 {
+  text-align: center;
+}
+
+.obrasConvidado .convobras {
+  margin-top: 3%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30%)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 30%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.obrasConvidado .convobras div h3 {
+  margin-top: 7%;
+  text-align: center;
+}
+
+.obrasConvidado .convobras div div {
+  margin: auto;
+  width: 170px;
+  height: 160px;
+  background: rgba(187, 182, 182, 0.74);
+  border: 2px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* fotos convidados */
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.54);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.54);
+  border-radius: 35px;
+  padding: 10px;
 }
 
 footer {

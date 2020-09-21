@@ -17,16 +17,19 @@
 .btn-concluir{
     @include link();
     @include centraliza();
-    background: rgb(6, 221, 6);
-    border:none;
+    // background: rgb(6, 221, 6);
+    border:1px solid rgb(6, 221, 6);
     border-radius:10px;
     padding: 12px;
-    color: white;
+    color: rgb(6, 221, 6);
     transition: all 400ms;
     min-width: 150px;
-    max-width: 300px;
+    max-width: 150px;
+    text-decoration: none;
     cursor: pointer;
     &:hover{
+        text-decoration: none;
+        color: #f2f2f2;
         background-color: green;
     }
 }

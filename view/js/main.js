@@ -1,9 +1,13 @@
 $(document).ready(function(){
     $(".conteudo").hide();
     $(".conteudo").fadeToggle(1000);
+    $("#campos").hide();
 });
 //$(".iconehide").fadeToggle();
-
+// $("#pesquisar").click(function(){
+//     $("#campos").fadeToggle(500);    
+//     $("#pesquisar").hide();
+// })
 
 function titulo(head){
     $("#title").html(head);

@@ -100,7 +100,7 @@
                                                 <p><b>Nome:</b> Aishra Valentini</p>
                                                 <p><b>Idade:</b> 21 anos</p>
                                                 <p><b>Email:</b> Aishra@hotmail.com</p>
-                                                <a href=""> visualizar</a>
+                                                <a href="../convidadosespeciais/especifico.php"> visualizar</a>
                                     </div>
                                 </div>
                                         <div id="pessoa5">
