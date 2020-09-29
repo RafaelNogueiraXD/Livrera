@@ -4,10 +4,10 @@ $(document).ready(function(){
     $("#campos").hide();
 });
 //$(".iconehide").fadeToggle();
-// $("#pesquisar").click(function(){
-//     $("#campos").fadeToggle(500);    
-//     $("#pesquisar").hide();
-// })
+$("#pesquisar2").click(function(){
+    $("#campos").show();    
+    $("#pesquisar2").hide();
+})
 
 function titulo(head){
     $("#title").html(head);

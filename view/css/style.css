@@ -1354,71 +1354,6 @@ table tr:hover {
   height: 25vh;
 }
 
-.conteudoTelainicial .pesquisa {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 8fr 2fr;
-      grid-template-columns: 8fr 2fr;
-  height: 10vh;
-}
-
-.conteudoTelainicial .pesquisa #campos form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 8fr 2fr;
-      grid-template-columns: 8fr 2fr;
-}
-
-.conteudoTelainicial .pesquisa #campos form .concluiform {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.conteudoTelainicial .pesquisa #campos form .pesquisaform {
-  padding-left: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.conteudoTelainicial .pesquisa #campos form .pesquisaform label {
-  margin-right: 10px;
-  font-size: 18px;
-  margin-top: 1%;
-}
-
-.conteudoTelainicial .pesquisa #campos form .pesquisaform input {
-  margin-right: 10%;
-  border: 1px solid #a6a6a6;
-  border-radius: 10px;
-  background: none;
-  padding: 10px;
-  width: 25%;
-}
-
-.conteudoTelainicial .pesquisa #campos form .pesquisaform input:focus {
-  border: 2px solid #14eab3ff;
-  border-radius: 10px;
-  outline: 0px;
-}
-
 #pesquisar {
   margin-left: 95%;
 }
@@ -1481,6 +1416,71 @@ table tr:hover {
   color: #14eab3ff;
   margin-left: 20%;
   margin-bottom: 10px;
+}
+
+.pesquisa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 2fr;
+      grid-template-columns: 8fr 2fr;
+  height: 10vh;
+}
+
+.pesquisa #campos form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 2fr;
+      grid-template-columns: 8fr 2fr;
+}
+
+.pesquisa #campos form .concluiform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pesquisa #campos form .pesquisaform {
+  padding-left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pesquisa #campos form .pesquisaform label {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 1%;
+}
+
+.pesquisa #campos form .pesquisaform input {
+  margin-right: 10%;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  background: none;
+  padding: 10px;
+  width: 25%;
+}
+
+.pesquisa #campos form .pesquisaform input:focus {
+  border: 2px solid #14eab3ff;
+  border-radius: 10px;
+  outline: 0px;
 }
 
 .conteudoConvidadoEspecifico {
@@ -1638,6 +1638,256 @@ table tr:hover {
           box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.54);
   border-radius: 35px;
   padding: 10px;
+}
+
+.conteudoAllObras {
+  width: 100%;
+  overflow: hidden;
+}
+
+.conteudoAllObras .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25vh;
+}
+
+.conteudoAllObras .allobras {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.conteudoAllObras .allobras div {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  margin-left: 30%;
+  height: 464px;
+  position: relative;
+}
+
+.conteudoAllObras .allobras div div {
+  display: block;
+  width: 100%;
+  height: 464px;
+  padding: 0;
+  margin: 0;
+}
+
+.conteudoAllObras .allobras div div h2 {
+  margin: 15px;
+}
+
+.conteudoAllObras .allobras div div h2:after {
+  content: "";
+  display: block;
+  margin: 0;
+  margin-left: -3.5%;
+  width: 104%;
+  background-color: black;
+  height: 1px;
+  margin-top: 20px;
+}
+
+.conteudoAllObras .allobras div div .descobra {
+  margin-top: 10%;
+  border: none;
+  height: 25vh;
+}
+
+.conteudoAllObras .allobras div div .descobra p {
+  margin-top: 25px;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+.conteudoAllObras .allobras div div .btnobra {
+  margin-top: 2%;
+  margin-left: -5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2vh;
+}
+
+.conteudoAllObras .allobras div div .btnobra a {
+  color: #14eab3ff;
+  width: 30%;
+}
+
+.conteudoAllObras .allobras div div .btnobra a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.conteudoAllObras .allobras .pesquisa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 2fr;
+      grid-template-columns: 8fr 2fr;
+  height: 10vh;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 2fr;
+      grid-template-columns: 8fr 2fr;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form .concluiform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form .pesquisaform {
+  padding-left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form .pesquisaform label {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 1%;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form .pesquisaform select {
+  margin-right: 10%;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  background: none;
+  padding: 10px;
+  width: 25%;
+  padding: 10px;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form .pesquisaform select:focus {
+  border: 2px solid #14eab3ff;
+  border-radius: 10px;
+  outline: 0px;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form .pesquisaform input {
+  margin-right: 10%;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  background: none;
+  padding: 10px;
+  width: 25%;
+}
+
+.conteudoAllObras .allobras .pesquisa #campos form .pesquisaform input:focus {
+  border: 2px solid #14eab3ff;
+  border-radius: 10px;
+  outline: 0px;
+}
+
+#pesquisar2 {
+  margin-left: 90%;
+}
+
+#obras {
+  background-image: url("img/fundos/obras.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: "367px";
+  height: "464px";
+}
+
+.mostraObra {
+  width: 100%;
+  position: relative;
+  min-height: 40vh;
+  background-color: bisque;
+}
+
+.dadosObra {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.descricaoObra {
+  margin-top: 7%;
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background: rgba(22, 22, 22, 0.94);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  margin-left: 10%;
+  margin-right: 15%;
+  padding: 30px;
+  margin-bottom: 10vh;
+  overflow: hidden;
+}
+
+.descricaoObra h2 {
+  text-align: left;
+}
+
+.descricaoObra p {
+  margin-top: 3%;
+  color: #f2f2f2;
+  margin-right: 5%;
+  word-wrap: break-word;
 }
 
 footer {
