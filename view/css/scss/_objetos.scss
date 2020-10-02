@@ -133,7 +133,7 @@
 }
 
 table{
-    width: 140%;
+    width: 100%;
     border: 1 solid grey; 
     border-collapse: collapse;
     thead{
@@ -144,12 +144,14 @@ table{
         }
     }
     th{
-        border-bottom: 1px solid $primaria;
+        border-bottom: 1px solid black;
         width: 500px;
-        font-size: 25px;
-        -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: $primaria;
-        color: white;
+        font-size: 20px;
+        // -webkit-text-stroke-width: 0.5px;
+        // -webkit-text-stroke-color: $primaria;
+        // color: white;
+        color: #000000;
+        padding: 20px;
     }
     tr{
         width: 500px;
@@ -159,7 +161,7 @@ table{
         }
         td{
             padding: 40px;
-            font-size: 20px;
+            font-size: 15px;
             text-align: center;
             border-bottom: 1px solid #ddd;
         }
