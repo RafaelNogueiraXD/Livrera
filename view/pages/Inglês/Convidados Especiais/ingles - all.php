@@ -11,10 +11,10 @@ include "../templates/menu.html";
             <div id="campos">
                 <form action="">
                     <div class="pesquisaform">
-                        <label for="Name">Name:</label>
-                        <input type="text" id="Name" name="Name" placeholder="type the name ">
-                        <label for="NacionalAge">NacionalAge:</label>
-                        <input type="text" id="NacionalAge" name="nacionalAge" placeholder="type the country">
+                        <label for="Nome">Name:</label>
+                        <input type="text" id="Nome" name="Nome" placeholder="type the name ">
+                        <label for="Nacionalidade">Nationality:</label>
+                        <input type="text" id="Nacionalidade" name="Nacionalidade" placeholder="type the country">
                     </div>
                     <div class="concluiform">
                         <a href="" class="btn-concluir">Search</a>  
