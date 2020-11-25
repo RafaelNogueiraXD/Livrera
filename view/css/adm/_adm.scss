@@ -1,0 +1,151 @@
+.headadm{
+    background-color: #161616;
+    display: grid;
+    grid-template-columns: 1.5fr 8fr 1.5fr;
+    height: 15vh;
+    div{
+        display: flex;
+        @include centraliza();
+        .opcoesAdm{
+            font-size: 20px;
+            margin-left: 5%;
+            transition: all 400ms;
+        }
+    }
+}
+.admAdd{
+    h1{
+        color: #161616;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #cadastro{
+        margin-bottom: 6%;
+        background-color: rgb(231, 231, 231);
+        width: 60%;
+        border: 1px solid black;
+        min-height: 25vh;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 20px;
+        .close{
+            color: #a6a6a6;
+            margin-left: 1%;
+            margin-top: 50vh;
+            cursor: pointer;
+            transition: all 400ms;
+            font-size: 20px;
+            &:hover{
+                color: #DD0426;
+            }
+        }
+        .formulario{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            div{
+                padding: 5%;
+                padding-left: 20%;
+                // border: 1px solid black;
+                align-content: center;
+                align-items: center;
+                select{
+                    margin-top: 2.5%;
+                    margin-bottom: 2.5%;
+                    // margin-right: 10%;
+                    border: 1px solid #a6a6a6;
+                    border-radius: 10px;
+                    background: none;
+                    padding: 10px;
+                    transition: all 100ms;
+                    width: 50%;
+                    &:focus{
+                        background-color: rgba(252, 252, 252, 0.329);
+                        border: 2px solid $primaria;
+                        border-radius: 10px;
+        
+                        outline: 0px;
+                    }
+                }
+                input{
+                    margin-top: 2.5%;
+                    margin-bottom: 2.5%;
+                    // margin-right: 10%;
+                    border: 1px solid #a6a6a6;
+                    border-radius: 10px;
+                    background: none;
+                    padding: 10px;
+                    transition: all 100ms;
+                    width: 50%;
+                    &:focus{
+                        background-color: rgba(252, 252, 252, 0.329);
+                        border: 2px solid $primaria;
+                        border-radius: 10px;
+        
+                        outline: 0px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .pesquisaAdm{
+        width: 50%;
+        margin-left: 35%;
+        margin-top: 2.5%;
+
+        // background-color: #a6a6a6;
+        input{
+        border: 1px solid #a6a6a6;
+        border-radius: 10px;
+        background: none;
+        padding: 10px;
+        transition: all 100ms;
+            &:focus{
+                border: 2px solid $primaria;
+                border-radius: 10px;
+                outline: 0px;
+            }
+        }
+        a{
+            color: #020069;
+            border: 1px solid #020069;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 15px;
+            transition: all 400ms;
+            &:hover{
+                background-color: #020069a4;
+                border: 1px solid #020069a4;
+
+                color: white;
+            }
+        }
+    }
+    .mostraDadosAdm{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        background: rgb(231, 231, 231);;
+        margin-top: 2.5%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 10%;
+        border: 0.5px solid rgba(0, 0, 0, 0.377);
+        a{
+            color: $primaria;
+        }
+        
+    }
+}
+// #edita{
+//     @include imagem("../img/icones/editar.png","36px","37px");
+// }
+// #excluir{
+//     @include imagem("../img/icones/excluir.png","36px","37px");
+
+// }
+// #ver{
+//     @include imagem("../img/icones/ver.png","36px","37px");
+
+// }

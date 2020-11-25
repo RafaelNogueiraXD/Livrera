@@ -1,0 +1,109 @@
+.conteudoTelainicial{
+    display: grid;
+    grid-template-columns: 1fr;
+    .titulo{
+        display: flex;
+        @include centraliza();
+        height: 25vh;
+    }
+
+}
+#pesquisar{
+    margin-left: 95%;
+}
+.convidadosEspeciais{
+    // margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    div{
+        width: 170px;
+        height: 160px;
+        background-color: rgb(99, 99, 99);
+        border: 1px solid #050505;
+        border-radius: 35px;
+        margin: auto;
+        margin-top: 30%;
+        position: relative;
+        transition: all 400ms;
+        overflow: hidden;
+        &:hover .desc{
+            display: block;
+            margin-top: 0%;
+        }
+        .desc{
+            margin-top: 70%;
+            display: block;
+            transition: all 400ms;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.647);
+            h3{
+                margin: 10px auto;
+                font-size: 20px;
+                text-align: center;
+            }
+            p{
+                font-size: 10px;
+                color: white;
+            }
+            b{
+                color: white;
+            }
+            a{
+                color: $primaria;
+                margin-left: 20%;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+.pesquisa{
+    // border: 1px solid black;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    height: 10vh;
+   
+    #campos form{
+        // border: 1px solid black;
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        div{
+            // border: 1px solid black;
+        }
+        .concluiform{
+            display: flex;
+            @include centraliza();
+        }
+        .pesquisaform{
+            padding-left:40%;
+            display: flex;
+            @include centraliza();
+            label{
+                margin-right: 10px;
+                font-size: 18px;
+                margin-top: 1%;
+            }
+            input{
+                margin-right: 10%;
+                border: 1px solid #a6a6a6;
+                border-radius: 10px;
+                background: none;
+                padding: 10px;
+                width: 25%;
+                &:focus{
+                    border: 2px solid $primaria;
+                    border-radius: 10px;
+    
+                    outline: 0px;
+                }
+            }
+
+        }
+   
+    }
+}

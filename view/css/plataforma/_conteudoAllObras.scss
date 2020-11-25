@@ -1,0 +1,141 @@
+.conteudoAllObras{
+    width: 100%;
+    overflow: hidden;
+    .titulo{
+        display: flex;
+        @include centraliza();
+        height: 25vh;
+        
+        // background-color: black;
+    }
+    .allobras{
+        margin-top: 5%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        div{
+            margin-top: 10%;
+            // border: 1px solid black;
+            display: flex;
+            @include centraliza();
+            width: 40%;
+            margin-left: 30%;
+            height: 464px;
+            position: relative;
+            div{
+
+                display: block;
+                width: 100%;
+                height: 464px;
+                padding: 0;
+                margin: 0;
+                h2{
+                    margin: 15px;
+                    &:after{
+                        content: "";
+                        display: block;
+                        margin: 0;
+                        // right: +10px;
+                        margin-left: -3.5%;
+                        width: 104%;
+                        background-color: black;
+                        height: 1px;
+                        margin-top: 20px;
+                    }
+                }
+                .descobra{
+                    margin-top: 10%;
+                    border: none;
+                    height: 25vh;
+                    p{
+                        margin-top: 25px;
+                        text-align: left;
+                        font-size: 14px;
+                        margin-left: 5%;
+                    }
+                }
+                .btnobra{
+                    margin-top: 2%;
+                    margin-left: -5%;
+                    display: flex;
+                    @include centraliza();
+                    height: 2vh;
+                    a{
+                        color: $primaria;
+                        width: 30%;
+                        &:hover{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    .pesquisa{
+        // border: 1px solid black;
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        height: 10vh;
+       
+        #campos form{
+            // border: 1px solid black;
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+            div{
+                // border: 1px solid black;
+            }
+            .concluiform{
+                display: flex;
+                @include centraliza();
+            }
+            .pesquisaform{
+                padding-left:40%;
+                display: flex;
+                @include centraliza();
+                label{
+                    margin-right: 10px;
+                    font-size: 18px;
+                    margin-top: 1%;
+                }
+                select{
+                    margin-right: 10%;
+                    border: 1px solid #a6a6a6;
+                    border-radius: 10px;
+                    background: none;
+                    padding: 10px;
+                    width: 25%;
+                    padding: 10px;
+                    &:focus{
+                        border: 2px solid $primaria;
+                        border-radius: 10px;
+        
+                        outline: 0px;
+                    }
+                }
+                input{
+                    margin-right: 10%;
+                    border: 1px solid #a6a6a6;
+                    border-radius: 10px;
+                    background: none;
+                    padding: 10px;
+                    width: 25%;
+                    &:focus{
+                        border: 2px solid $primaria;
+                        border-radius: 10px;
+        
+                        outline: 0px;
+                    }
+                }
+    
+            }
+        }
+        }
+    }
+}
+#pesquisar2{
+    margin-left: 90%;
+}
+#obras{
+    @include imagem("img/fundos/obras.png","367px","464px");
+
+}

@@ -1,0 +1,93 @@
+.conteudoPesquisa{
+    h1,h2{
+        color: #161616;
+    }
+    .inicioPesquisa{
+        margin-top: 7%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill , 400px);
+        text-align: center;
+        width: 45%;
+        height: 10%;
+        // border: 1px solid black;
+        margin-left: 35%;
+        margin-right: 30%;
+        .second{
+            width: 300px;
+            text-align: end;
+            select{
+                border: 2.5px solid black;
+                border-radius: 10px;
+                color: rgb(161, 159, 159);
+                background-color: transparent;
+                padding: 10px;
+            }
+        }
+    }
+    .pesquisar{
+        margin-top: 5%;
+        h2{
+            width: 100%;
+            height: 40px;
+            margin-left: 20%;
+        }
+        .artistaPesquisado{
+            margin-top: 5%;
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            height: 180px;
+            background: rgba(22, 22, 22, 0.94);
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 40px;
+            padding: 20px;
+            margin-left: 20%;
+            transition: all 40ms;
+            &:hover{
+            background: rgba(22, 22, 22, 0.91);
+
+            }
+            
+            .fotoPesquisa{
+                display: flex;
+                @include centraliza();
+                border: 1px solid black;
+               
+                box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.54);
+                border-radius: 35px;
+                width: 127.5px;
+                height: 120px;
+                margin: auto;
+            }
+            .infosDaPesquisa{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+                p{
+                    margin: auto;
+                    color: white;
+                }
+            }
+            .botaovisualizar{
+                text-align: center;
+                // padding: 30%;
+                a{
+                    display: block;
+                    margin: 20%;
+                    width: 70%;
+                    border: 1px solid $primaria;
+                    padding: 20px;
+                    color: $primaria;
+                    transition: all 400ms;
+                    border-radius: 20px;
+                    &:hover{
+                        text-decoration: none;
+                        background-color: $primaria;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

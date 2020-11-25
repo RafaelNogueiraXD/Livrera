@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../view/css/style.css">
+    <script src="../view/js/jquery.js"></script>
+    <title>Adm</title>
+</head>
+<style>
+    *{
+        color: black;
+    }
+</style>
+<body>
+    <header class="headadm">
+        <div class="slogan">
+            <a href="../view/pages/apresentation/index.html">
+                <img src="../view/css/img/logos/livrera3.png" width="165px" height="76px" >
+            </a>
+        </div>
+        <div>
+            <a href="convidados.html" class="opcoesAdm">Convidados Especiais</a>
+            <a href="obras.html" class="opcoesAdm">Obras</a>
+        </div>
+        <div>
+            <a href="" class="red-btn">Sair</a>
+        </div>
+    </header>
+
+    <main class="admAdd">
+        <a class="btn-concluir" style="margin-left: 89%;margin-top: 3vh;" id="abreCad">Adicionar</a>
+        <section id="cadastro">
+            <a class="close">x</a>
+            <h1>Adicionar Convidado</h1>
+            <form action="">
+                <div class="formulario">
+                    <div>
+                        <label for="">Campo:</label>
+                        <input type="text" placeholder="Digite o Campo "> <br>
+                        <label for="">Autor:</label>
+                        <input type="text" placeholder="Digite o Campo">
+                    </div>
+                    <div>
+                        <label for="">input Data:</label>
+                        <input type="date" placeholder="Digite a senha"><br>
+                        <label for="">Campo:</label>
+                        <input type="text" placeholder="Digite o Campo "> <br>
+                    </div>
+                    <div>
+                        <label for="">Select:</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select> <br>
+                        <label for="">Autor:</label>
+                        <input type="text" placeholder="Digite o Campo">
+                    </div>
+                    <div style="border: 1px solid black;">
+                        <Label>Texto de Area</Label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <label for="">Data de envio:</label>
+                        <input type="date" placeholder="Digite a senha">
+                        <a class="btn-concluir">Adicionar</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <h1>Convidado Especial</h1>
+        <section class="pesquisaAdm">
+            <form action="">
+                Campo: <input type="text" placeholder="Digite o Campo ">
+                Campo: <input type="text" placeholder="Digite o Campo">
+                <a id="pesquisarAdm">Pesquisar</a>
+            </form>
+        </section>
+        <section class="mostraDadosAdm">
+            <table border="0">                         
+                <thead>
+                    <th>ID</th>
+                    <th>Campo</th>
+                    <th>Campo</th>
+                    <th>Campo</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Campo</td>
+                        <td>Campo</td>
+                        <td>Campo</td>
+                        <td><a href="" id="edita"><img  src="../view/css/img/icones/editar.png" width="36px" height="37px"></a><a href="" id="edita"><img  src="../view/css/img/icones/excluir.png" width="36px" height="37px"></a> <a href="" id="edita"><img  src="../view/css/img/icones/ver.png" width="36px" height="37px"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <center>
+            <a href="adm.html" style="color: #1624A0;">Adicionar novo adm</a>
+        </center>
+    </main>
+    
+    <script src="../view/js/main.js"></script>
+        <script>
+            $("#cadastro").hide();
+            $("#abreCad").click(function(){
+                $("#cadastro").fadeIn();
+            });
+            $(".close").click(function(){
+                $("#cadastro").fadeOut();
+            });
+        </script>
+</body>
+</html>

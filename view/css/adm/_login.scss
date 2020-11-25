@@ -1,0 +1,35 @@
+.loginh{
+    width: 100%;
+    display: flex;
+    @include centraliza();
+    height: 20vh;
+    background-color: #161616;
+}
+.loginb{
+    width: 100%;
+    margin-top: 7%;
+    height: 70vh;
+    // background-color: #161616;
+    div{
+        display: flex;
+        @include centraliza();
+        height: 10vh;
+        input{
+            padding: 20px;
+            width: 30%;
+            height: 50px;
+            border-radius: 16px;
+            border: 1px solid black;
+            background: none;
+            font-size: 16px;
+            color: black;
+            padding-left: 20px;
+            &:focus{
+                border: 2px solid $primaria;
+                border-radius: 16px;
+                box-shadow: 0px 0px 10px $primaria;
+                outline: 0px;
+            }
+        }
+    }
+}

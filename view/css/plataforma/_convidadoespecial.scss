@@ -1,0 +1,129 @@
+.conteudoConvidadoEspecifico{
+     height:440px;
+    h1{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .dadospessoais{
+        margin-top: 4%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        div{
+            // border: 1px solid black;
+        }
+        .dadospessoaisImagem{
+            height: 440px;
+            width: 70%;
+            display: flex;
+            justify-content: right;
+            justify-items: right;
+            text-align: right;
+            justify-self: right;
+            display: flex;
+            text-align: right;
+            align-items: right;
+            justify-content: right;
+            border-radius: 46px;
+            border: 1px solid black ;
+            
+        }
+        .dadospessoaisEscrito{
+            width:70%;
+            margin-top: 20px;
+            margin-left: 5px;
+            margin-right: 10px;
+            height: 400px;
+            background: rgba(22, 22, 22, 0.94);
+// border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 16px;
+            p {
+                color: #f2f2f2;
+                margin-top: 5%;
+            }
+            h2{
+                width: 100%;
+                margin: 10px auto;               
+                display: flex;
+                @include centraliza();
+            }
+            .ddusuario{
+                padding-left: 5%;
+                padding-top: 5%;
+                
+              
+            }
+            
+        }
+    }
+}
+.descricaoConvidado{
+    margin-top: 7%;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr;
+    background: rgba(22, 22, 22, 0.94);
+    // border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 30px;
+    // padding-right: 30%;
+
+    overflow: hidden;
+    h2{
+        text-align: left;
+    }
+    p{
+        margin-top: 3%;
+        color: #f2f2f2;
+        margin-right: 5%;
+        word-wrap: break-word;
+    }
+}
+.obrasConvidado{
+    margin-top: 7%;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr;
+    background: rgba(22, 22, 22, 0.94);
+    // border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 30px;
+    margin-bottom: 10%;
+    h2{
+        text-align: center;
+    }
+    .convobras{
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns:  repeat(auto-fill, 30% );
+        justify-content: center;
+        div{
+            
+            h3{
+                margin-top: 7%;
+                text-align: center;
+            }
+            div{
+                // margin-left: 27%;
+                margin: auto;
+                width: 170px;
+                height: 160px;
+                background: rgba(187, 182, 182, 0.74);
+                border: 2px solid #000000;
+                box-sizing: border-box;
+                /* fotos convidados */
+
+                box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.54);
+                border-radius: 35px;
+                padding: 10px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,176 @@
+.telainicial{
+    width: 100%;
+    // grid-template-rows: 2;
+    div{
+        // border: 1px solid black;
+        .titulo{
+            display: flex;
+            @include centraliza();
+            width: 100%;
+            height: 25vh;
+            // background-color: #00000046;
+        }
+
+    }
+    .parte1{
+        @include imagem("img/fundos/inicial1.png","1200px","800px");
+        min-height: 123vh;
+        // max-height: 123vh;
+        .carrossel{
+            // margin: 10% auto;
+            // background-color: #6d6b6ba8;
+            width: 60%;
+            margin-right: 20%;
+            margin-left: 20%;
+            margin: auto;
+            background: rgba(112, 112, 112, 0.86);
+            border: 0.5px solid #A6A6A6;
+            box-sizing: border-box;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+            border-radius: 33px;
+            height: 70vh;
+            position: relative;
+            padding: 30px;
+            img{
+                padding-top: 5%;
+                padding-left: 12%;
+                margin-bottom: 15px;
+            }
+            // padding: 10px;
+            // .conteudo{
+            //     // display: flex;
+            //     // @include centraliza();
+            // }
+        }
+   
+
+    }
+ 
+    .parte2{
+        @include imagem("img/fundos/inicial2.png","1200px","800px");
+        min-height: 122vh;
+        // max-height: 110vh;
+        overflow: hidden;
+ 
+        .convidados{
+            margin-top: 7%;
+            width: 100%;
+            .red-btn{
+                margin-top: 3%;
+            }
+            .pais{
+                margin-left: 15.5%;
+                margin-top: 5%;
+                h2{
+                    font-family:'Cousine', monospace ;
+                }
+            }
+            .pessoas{
+                background-color: #f2f2f281;
+                // opacity: 46%;
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                margin-left: 15%;
+                margin-top: 1%;
+                min-height: 20vh;
+                border: 1px solid #161616;
+                border-radius: 20px;
+                width: 70%;
+                div{
+                    width: 170px;
+                    height: 160px;
+                    background-color: rgb(99, 99, 99);
+                    border: 1px solid #050505;
+                    border-radius: 35px;
+                    margin: auto;
+                    position: relative;
+                    transition: all 400ms;
+                    overflow: hidden;
+                    &:hover .desc{
+                        display: block;
+                        margin-top: 0%;
+                    }
+                    .desc{
+                        margin-top: 70%;
+                        display: block;
+                        transition: all 400ms;
+                        position: absolute;
+                        background-color: rgba(0, 0, 0, 0.647);
+                        h3{
+                            margin: 10px auto;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                        p{
+                            font-size: 10px;
+                            color: white;
+                        }
+                        b{
+                            color: white;
+                        }
+                        a{
+                            color: $primaria;
+                            margin-left: 20%;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+        h2{
+            color: black;
+        }
+     
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1400px){
+    .telainicial{
+        .parte1{
+            min-height: 800px;
+            .carrossel{
+                width: 90%;
+                height: 80vh;
+            }
+        }
+        .parte2{
+            min-height: 666px;
+
+            @include imagem("img/fundos/inicial2.png","1200px","800px");
+            .brasil{
+                display: none;
+            }
+            .uruguay{
+                padding: 10px;
+            }
+        }    
+    }
+}
+@media screen and (min-width:1500px) and (max-width: 1700px){
+    .telainicial{
+        div .titulo{
+            height:15vh;
+        }
+        .parte1{
+            min-height: 126vh;
+            .carrossel{
+                width: 70%;
+                height: 60vh;
+            }
+
+        }
+        .parte2{
+            min-height: 90vh;
+
+            @include imagem("img/fundos/inicial2.png","1200px","800px");
+            .brasil{
+                display: block;
+            }
+        }    
+    }
+}
+
+#pessoa1{
+    @include imagem("img/pessoa/andressa.png","170px","160px");
+}
